@@ -1,0 +1,53 @@
+.about {
+    padding-top: 120px;
+    &__subtitle {
+        padding-left: 13px;
+        padding-top: 6px;
+        position: relative;
+        left: 0;
+        top: 0;
+        @include before_circle_top-0;
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 70px;
+    }
+    &__projects {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(100px, 260px));
+        grid-template-rows: minmax(116px, auto);
+        column-gap: 50px;
+        row-gap: 20px;
+        &_block {
+            position: relative;
+            display: flex;
+            @include before_circle_top-0
+        }
+        &_icon {
+            margin-top: 15px;
+            margin-left: 16px;
+        }
+        &_descr {
+            margin-left: 20px;
+        }
+        &_text {
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__divider {
+        margin-top: 4px;
+        width: 60px;
+        height: 0px;
+        border: 2px solid $main-color;
+    }
+    &__text {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+    }
+}

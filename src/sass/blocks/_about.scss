@@ -1,53 +1,60 @@
 .about {
     padding-top: 120px;
-    &__subtitle {
-        padding-left: 13px;
-        padding-top: 6px;
-        position: relative;
-        left: 0;
-        top: 0;
-        @include before_circle_top-0;
-    }
     &__wrapper {
         display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 70px;
+        grid-template-columns: 400px 670px;
+        grid-template-rows: minmax(245px, auto) minmax(250px, auto);
+        grid-auto-rows: minmax(245px, auto);
+        column-gap: 70px;
+        row-gap: 40px;
     }
-    &__projects {
-        margin-top: 40px;
-        display: grid;
-        grid-template-columns: repeat(2, minmax(100px, 260px));
-        grid-template-rows: minmax(116px, auto);
-        column-gap: 50px;
-        row-gap: 20px;
-        &_block {
-            position: relative;
-            display: flex;
-            @include before_circle_top-0
-        }
-        &_icon {
-            margin-top: 15px;
-            margin-left: 16px;
-        }
-        &_descr {
-            margin-left: 20px;
-        }
-        &_text {
-            font-weight: 500;
-            font-size: 12px;
-            line-height: 18px;
+    &__photo {
+        grid-row: 1/3;
+        img {
+            max-width: 100%;
         }
     }
-    &__divider {
-        margin-top: 4px;
-        width: 60px;
-        height: 0px;
-        border: 2px solid $main-color;
+    &__descr {
+        padding-top: 6px;
+        .divider {
+            margin-top: 4px;
+        }
+    }
+    &__title {
+        padding: 1px 0 0 12px;
+        position: relative;
+        @include before_circle;
     }
     &__text {
         margin-top: 20px;
-        font-weight: 500;
         font-size: 14px;
         line-height: 21px;
+        margin-bottom: 0;
+    }
+    &__skills {
+        display: grid;
+        grid-template-columns: repeat(2, 260px);
+        grid-template-rows: repeat(2, minmax(115px, auto));
+        grid-auto-rows: 1fr;
+        column-gap: 50px;
+        row-gap: 20px;
+        &-item {
+            display: grid;
+            grid-template-columns: 40px 200px;
+            column-gap: 20px;
+        }
+        &-circle {
+                position: relative;
+                padding: 15px 0 0 15px;
+                @include before_circle;
+                &:before {
+                    top: 0;
+                }
+        }
+        &-text {
+            margin-top: 6px;
+            font-size: 12px;
+            line-height: 18px;
+        }
     }
 }

@@ -1,0 +1,80 @@
+.skills {
+    &__title {
+        text-align: center;
+        position: relative;
+        @include before_circle;
+            &:before {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) 
+            }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(auto, 270px));
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+
+    }
+    &__item {
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000000;
+        &-img {
+            max-width: 162px;
+            height: 65px;
+        }
+        &-subtitle {
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &-descr {
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    &__progress {
+        margin-top: 120px;
+        &-title {
+            position: relative;
+            padding: 8px 0 0 13px;
+            @include before_circle;
+            &:before {
+                top: 0;
+            }
+        }
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 70px);
+            grid-auto-rows: 70px;
+            column-gap: 45px;
+            row-gap: 30px;
+        }
+        &-item-head {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-item-body {
+            margin-top: 27px;
+            width: 100%;
+            height: 14px;
+            background: #E8E4DE;
+            border-radius: 4px;
+        }
+        &-item-range {
+            background: $main-color;
+            height: 100%;
+            border-radius: 4px;
+        }
+    }
+}

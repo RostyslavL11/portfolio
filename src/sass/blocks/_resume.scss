@@ -1,5 +1,7 @@
 .resume {
     padding-top: 120px;
+    padding-right: 77px;
+    padding-left: 77px;
     &__title {
         position: relative;
         text-align: center;
@@ -17,7 +19,7 @@
         padding: 60px 0 65px 0 ;
         display: grid;
         grid-template-columns: repeat(2, 425px);
-        column-gap: 135px;
+        column-gap: 145px;
     }
     &__column {
         &-title {

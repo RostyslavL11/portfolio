@@ -2,21 +2,8 @@
     padding-top: 120px;
     padding-right: 77px;
     padding-left: 77px;
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-            &:before {
-                top: -6px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-    }
-    &__subtitle {
-        text-align: center;
-    }
     &__wrapper {
-        padding: 60px 0 65px 0 ;
+        padding: 60px 0 0 0 ;
         display: grid;
         grid-template-columns: repeat(2, 425px);
         column-gap: 145px;

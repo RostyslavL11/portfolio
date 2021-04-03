@@ -1,9 +1,7 @@
 .resume {
     padding-top: 120px;
-    padding-right: 77px;
-    padding-left: 77px;
     &__wrapper {
-        padding: 60px 0 0 0 ;
+        padding: 60px 65px 0 65px ;
         display: grid;
         grid-template-columns: repeat(2, 425px);
         column-gap: 145px;

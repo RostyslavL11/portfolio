@@ -3,7 +3,7 @@
     &__wrapper {
         padding: 60px 65px 0 65px ;
         display: grid;
-        grid-template-columns: repeat(2, 425px);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 145px;
     }
     &__column {

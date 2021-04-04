@@ -2,12 +2,14 @@
     margin-top: 120px;
     &__wrapper {
         padding: 0 10px;
+        margin: 0 auto;
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(4, minmax(auto, 270px));
+        grid-template-columns: repeat(auto-fill, minmax(270px, 270px));
         grid-template-rows: repeat(2, minmax(270px, auto));
         grid-auto-rows: minmax(270px, auto);
         gap: 13px;
+        justify-content: center;
 
     }
     &__item {
@@ -34,11 +36,12 @@
     &__progress {
         margin-top: 120px;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(auto , 350px));
         grid-template-rows: repeat(2, minmax(70px, auto));
         grid-auto-rows: minmax(70px, auto);
         column-gap: 45px;
         row-gap: 30px;
+        justify-content: center;
         &-title {
             position: relative;
             padding: 8px 0 0 13px;

@@ -5,7 +5,7 @@
         margin: 0 auto;
         margin-top: 60px;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(270px, 270px));
+        grid-template-columns: repeat(auto-fit, 270px);
         grid-template-rows: repeat(2, minmax(270px, auto));
         grid-auto-rows: minmax(270px, auto);
         gap: 13px;
